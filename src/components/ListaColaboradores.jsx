@@ -13,7 +13,7 @@ const ListaColaboradores = ({colaboradores, palabraBusqueda}) => {
     return (
         <div className="p-4">
             <h5>Lista de colaboradores/as</h5>
-            <table className="table table-striped table-hover shadow-lg ">
+            <table className="table table-striped shadow">
                 <thead className="bg-dark text-white"> 
                     <tr>
                         <th scope='col'>Nombre</th>

@@ -26,16 +26,16 @@ const Formulario = ({colaboradores, setColaboradores}) => {
 
     return(
         <form onSubmit={handleUsers} className="p-4">
-            <h5>Agregar colaborador/a</h5>
+            <h5>Formulario colaboradores/as</h5>
             <div className="mb-2">
                 <label htmlFor="nombre" className="form-label">Nombre:</label>
-                <input type="text" id="nombre" className="form-control" value={nombre} onChange={(e)=> setNombre(e.target.value)}/>
+                <input type="text" id="nombre" className="form-control shadow-sm" placeholder="ej. Juan Perez, María Olivares" value={nombre} onChange={(e)=> setNombre(e.target.value)}/>
             </div>
-            <div className="mb-2"> 
+            <div className="mb-3"> 
                 <label htmlFor="email" className="form-label">Correo electrónico: </label>
-                <input type="email" id="email" className="form-control" value={correo} onChange={(e)=> setCorreo(e.target.value)}/>
+                <input type="email" id="email" className="form-control shadow-sm" placeholder="ej. correo@correo.com" value={correo} onChange={(e)=> setCorreo(e.target.value)}/>
             </div>
-            <button type="submit" className="btn btn-primary">Agregar</button>
+            <button type="submit" className="btn btn-dark">Agregar colaborador/a</button>
             {error == true ? (<div className="alert alert-danger mt-3" role="alert">Faltan datos por ingresar. Inténtelo de nuevo.</div>) : null}
         </form>
         
