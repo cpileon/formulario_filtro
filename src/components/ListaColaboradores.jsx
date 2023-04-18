@@ -6,7 +6,7 @@ const ListaColaboradores = ({colaboradores, palabraBusqueda}) => {
         resultadoBusqueda = colaboradores.filter(
             (usuario) =>
             usuario.nombre.toLowerCase().includes(palabraBusqueda.toLowerCase()) ||
-            usuario.correo.toLowerCase().includes(palabraBusqueda.toLowerCase)
+            usuario.correo.toLowerCase().includes(palabraBusqueda.toLowerCase())
         )
     }
 
