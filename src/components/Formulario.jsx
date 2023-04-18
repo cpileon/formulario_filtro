@@ -13,7 +13,7 @@ const Formulario = ({colaboradores, setColaboradores}) => {
         e.preventDefault()
         console.log(user)
         //Validación 
-        if(nombre == '' || correo == ' '){
+        if(nombre == '' || correo == ''){
             setError(true)
         }else{
             setError(false)

@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div>
-        <Buscador palabraBusqueda={palabraBusqueda} setPalabraBusqueda={setPalabraBusqueda} colaboradores={colaboradores} setColaboradores={setColaboradores}/>
+        <Buscador palabraBusqueda={palabraBusqueda} setPalabraBusqueda={setPalabraBusqueda} />
         <Formulario setColaboradores = {setColaboradores} colaboradores={colaboradores} />
         <ListaColaboradores colaboradores={colaboradores} palabraBusqueda={palabraBusqueda}/>
       
